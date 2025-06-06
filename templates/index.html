@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot com Flask</title>
+</head>
+<body>
+    <h2>Chatbot com IA e Excel</h2>
+    <form method="post">
+        <input type="text" name="pergunta" placeholder="Digite sua pergunta" size="50">
+        <input type="submit" value="Enviar">
+    </form>
+    {% if resposta %}
+        <p><strong>Resposta:</strong> {{ resposta }}</p>
+    {% endif %}
+</body>
+</html>
