@@ -2,3 +2,4 @@ flask
 pandas
 sentence-transformers
 gunicorn
+openpyxl
