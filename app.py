@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Carrega a base de conhecimento
 df = pd.read_excel("base_conhecimento.xlsx")
-modelo = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+modelo = SentenceTransformer('paraphrase-MiniLM-L6-v2', from_tf=True)
 perguntas_base = df['Pergunta'].tolist()
 embeddings_base = modelo.encode(perguntas_base, convert_to_tensor=True)
 
