@@ -3,4 +3,3 @@ pandas
 sentence-transformers
 gunicorn
 openpyxl
-tensorflow
